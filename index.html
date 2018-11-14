@@ -1,1 +1,128 @@
-<h1>Tables</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand arvo" href="#block-1">Tables</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#block-2" id="a-block-1">О приложении</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#block-3" id="a-block-2">Особенности</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#block-4" id="a-block-3">Технологии</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#block-5" id="a-block-4">Команда</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#block-6" id="a-block-5">Скачать</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class ="nav-item">  <a class ="nav-link arvo" href="#"><i class="far fa-envelope fa-sm"></i> supindex@gmail.com</a></li>
+            </ul>
+        </div>
+    </nav>
+<div class ="preblock" id ="block-1"></div>
+<div class = "block">
+    <div class = "container">
+    <h1>Tables</h1>
+    </div>
+</div>
+
+<div class ="preblock"  id ="block-2"></div>
+<div class = "block">
+
+    <div class = "container">
+    <h1>О приложении</h1>
+    </div>
+
+</div>
+
+<div class ="preblock"  id ="block-3"></div>
+<div class = "block">
+
+    <div class = "container">
+    <h1>Особенности</h1>
+    </div>
+</div>
+
+<div class ="preblock" id ="block-4"></div>
+<div class = "block">
+
+    <div class = "container">
+    <h1>Технологии</h1>
+    </div>
+
+</div>
+
+<div class ="preblock"  id ="block-5"></div>
+<div class = "block">
+
+    <div class = "container">
+    <h1>Команда</h1>
+    </div>
+</div>
+
+<div class ="preblock"></div>
+<div class ="block" id ="block-6">
+    <div class = "container">
+    <h1>Скачать</h1>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+</script>
+
+<script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous">
+</script>
+
+<script>
+$(document).ready(function(){
+
+$('a[href*="#"]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 500);//скорость прокрутки
+                return false;
+            }
+        }
+    });
+
+   })
+</script>
+
+</body>
+</html>

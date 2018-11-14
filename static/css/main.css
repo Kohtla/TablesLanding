@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700|Roboto+Slab');
+
+
+body
+{
+    background-color: #F1F0E2;
+}
+
+.navbar
+{
+    position:fixed;
+    height:10vh;
+    width:100vw;
+}
+.arvo
+{
+    font-family: 'Arvo', serif;
+    font-weight:700;
+}
+
+.nav-link
+{
+    font-family: 'Roboto Slab', serif;
+}
+
+h1
+{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 200;
+}
+
+
+.preblock
+{
+    height:10vh;
+}
+
+.block
+{
+    height: 90vh;
+}
