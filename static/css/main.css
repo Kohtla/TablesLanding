@@ -9,7 +9,6 @@ body
 .navbar
 {
     position:fixed;
-    height:10vh;
     width:100vw;
 }
 .arvo
@@ -23,7 +22,7 @@ body
     font-family: 'Roboto Slab', serif;
 }
 
-h1
+h1,h2,h3,h4,h5,h6,p
 {
     font-family: 'Roboto Slab', serif;
     font-weight: 200;
@@ -38,4 +37,14 @@ h1
 .block
 {
     height: 90vh;
+}
+
+.card
+{
+    z-index:-1;
+}
+
+b
+{
+    font-weight: 600;
 }

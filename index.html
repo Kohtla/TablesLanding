@@ -8,14 +8,14 @@
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar navbar-expand-lg navbar-light bg-light " id = "menu">
         <a class="navbar-brand arvo" href="#block-1">Tables</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarColor03">
-            <ul class="navbar-nav mr-auto">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#block-2" id="a-block-1">О приложении</a>
                 </li>
@@ -32,7 +32,7 @@
                     <a class="nav-link" href="#block-6" id="a-block-5">Скачать</a>
                 </li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right ml-auto">
                 <li class ="nav-item">  <a class ="nav-link arvo" href="#"><i class="far fa-envelope fa-sm"></i> supindex@gmail.com</a></li>
             </ul>
         </div>
@@ -40,7 +40,30 @@
 <div class ="preblock" id ="block-1"></div>
 <div class = "block">
     <div class = "container">
-    <h1>Tables</h1>
+
+        <h1>Tables</h1>
+        <div class = "row">
+            <div class = "col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Столики</h4>
+
+                        <h6 class="card-subtitle mb-2 text-muted">Так будут бронировать столики в будущем...</h6>
+
+                        <p class="card-text">Удобное приложения для бронирования столиков в ресторанах и других подобных заведениях.
+                        Выбирайте ресторан, необходимое или любимое место и подождите, пока администратор подтвердит бронь! </p>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class = "col-lg-8">
+
+            </div>
+
+        </div>
     </div>
 </div>
 
@@ -49,6 +72,31 @@
 
     <div class = "container">
     <h1>О приложении</h1>
+
+        <div class = "row">
+            <div class = "col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Бронирование</h4>
+
+                        <h6 class="card-subtitle mb-2 text-muted">Вы помните номер любимого ресторана?</h6>
+
+                        <p class="card-text">Мобильные приложения  все чаще встречаются в сфере услуг.
+                            Заказ такси или еды с помощью приложений стал обыденной вещью.
+                            Наше решение <b>заменяет</b> сложный поиск номеров ресторанов и <b>ускоряет</b> процесс бронирования столиков.</p>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class = "col-lg-8">
+
+            </div>
+
+        </div>
+
     </div>
 
 </div>
@@ -58,6 +106,31 @@
 
     <div class = "container">
     <h1>Особенности</h1>
+
+        <div class = "row">
+            <div class = "col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Инновации</h4>
+
+                        <h6 class="card-subtitle mb-2 text-muted">Я что то нажал и место забронировалось...</h6>
+
+                        <p class="card-text">Новейшая <b>система создания карт</b> заведений позволит гибко и быстро бронировать необходимые клиенту  места и столики.
+                            Это выделяет наше решение на фоне обычного бронирования мест по телефону или в интернете.
+                            Аналогов подобному нет. </p>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class = "col-lg-8">
+
+            </div>
+
+        </div>
+
     </div>
 </div>
 
@@ -66,6 +139,30 @@
 
     <div class = "container">
     <h1>Технологии</h1>
+
+        <div class = "row">
+            <div class = "col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Средства производства</h4>
+
+                        <h6 class="card-subtitle mb-2 text-muted">Open source, GNU и другие крутые слова...</h6>
+
+                        <p class="card-text">Для создания комплекса приложений мы используем современные,
+                            надежные и кроссплатформенные технологические решения. Основные среди них: Django, Kotlin и Swift.</p>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class = "col-lg-8">
+
+            </div>
+
+        </div>
+
     </div>
 
 </div>
@@ -75,6 +172,55 @@
 
     <div class = "container">
     <h1>Команда</h1>
+        <div class = "row">
+            <div class = "col-lg-4">
+                <div class="card mb-3">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Викентий Меретин</h5>
+                        <h6 class="card-subtitle text-muted">Mobile developer</h6>
+                    </div>
+                    <div class = "row justify-content-center">
+                    <img style="height: 40%; width: 40%; display: block;" src="static/imgs/1.png" alt="Card image">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Мобильный разработчик с большим опытом. В работе использует Flutter, Dart, Kotlin, Swift, Firebase, Flux</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "col-lg-4">
+                <div class="card mb-3">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Борис Голубков</h5>
+                        <h6 class="card-subtitle text-muted">Project manager, backend developer</h6>
+                    </div>
+                    <div class = "row justify-content-center">
+                    <img style="height: 40%; width: 40%; display: block;" src="static/imgs/2.png" alt="Card image">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Широкий специалист backend технологий: Restful API, Socket, Python, Java</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "col-lg-4">
+                <div class="card mb-3">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Алексей Климаков</h5>
+                        <h6 class="card-subtitle text-muted">Web developer</h6>
+                    </div>
+                    <div class = "row justify-content-center">
+                    <img style="height: 40%; width: 40%; display: block;" src="static/imgs/3.png" alt="Card image">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Web разработчик фрилансер, использующий Django, HTML5, AWS Lambda</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -82,6 +228,29 @@
 <div class ="block" id ="block-6">
     <div class = "container">
     <h1>Скачать</h1>
+        <div class = "row">
+            <div class = "col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">В разработке</h4>
+
+                        <h6 class="card-subtitle mb-2 text-muted">Пишем код, клепаем картинки, ищем инвесторов...</h6>
+
+                        <p class="card-text">На данный момент мы ведем разработку приложения,
+                            но готовый прототип вы сможете увидеть совсем скоро!
+                            Свои пожелания и запросы вы можете оставлять на наш email <b>supindex@gmail.com</b></p>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class = "col-lg-8">
+
+            </div>
+
+        </div>
     </div>
 </div>
 
@@ -92,36 +261,41 @@
 
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous">
+
 </script>
 
-<script
-        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous">
-</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
 <script>
 $(document).ready(function(){
+	$("#menu").on("click","a", function (event) {
+		//отменяем стандартную обработку нажатия по ссылке
+		event.preventDefault();
 
-$('a[href*="#"]').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-        && location.hostname == this.hostname) {
-            var $target = $(this.hash);
-            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-            if ($target.length) {
-                var targetOffset = $target.offset().top;
-                $('html,body').animate({scrollTop: targetOffset}, 500);//скорость прокрутки
-                return false;
-            }
-        }
-    });
 
-   })
+		//забираем идентификатор бока с атрибута href
+		let id  = $(this).attr('href');
+
+
+		//узнаем высоту от начала страницы до блока на который ссылается якорь
+		let	top = $(id).offset().top;
+
+
+		//анимируем переход на расстояние - top за 800vc
+		$('body,html').animate({scrollTop: top}, 800);
+
+	});
+});
+
+
 </script>
 
 </body>
