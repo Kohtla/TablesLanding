@@ -1,0 +1,8 @@
+{
+  "name": "TablesLanding",
+  "description": "Tables landing page",
+  "memory": 128,
+  "timeout": 5,
+  "role": "arn:aws:iam::399324126336:role/TablesLanding_lambda_function",
+  "environment": {}
+}
