@@ -184,7 +184,7 @@
                     <img style="height: 40%; width: 40%; display: block;" src="static/imgs/1.png" alt="Card image">
                     </div>
                     <div class="card-body">
-                        <p class="card-text">Мобильный разработчик с большим опытом. В работе использует Flutter, Dart, Kotlin, Swift, Firebase, Flux</p>
+                        <p class="card-text">Мобильный разработчик с большим опытом. В работе использует Kotlin, Swift, Firebase</p>
                     </div>
                 </div>
             </div>
@@ -201,6 +201,7 @@
                     </div>
                     <div class="card-body">
                         <p class="card-text">Широкий специалист backend технологий: Restful API, Socket, Python, Java</p>
+
                     </div>
                 </div>
             </div>
@@ -217,6 +218,7 @@
                     </div>
                     <div class="card-body">
                         <p class="card-text">Web разработчик фрилансер, использующий Django, HTML5, AWS Lambda</p>
+
                     </div>
                 </div>
             </div>
@@ -276,6 +278,16 @@
 
 <script>
 $(document).ready(function(){
+
+    let sec = Math.round(Date.now()/1000)
+    let time = String(new Date());
+    let id = String(Math.round(Math.random()* sec));
+	let place = String(navigator.userAgent);
+
+	alert(sec)
+	alert(id)
+	alert(time)
+	alert(place)
 	$("#menu").on("click","a", function (event) {
 		//отменяем стандартную обработку нажатия по ссылке
 		event.preventDefault();
@@ -292,6 +304,29 @@ $(document).ready(function(){
 		//анимируем переход на расстояние - top за 800vc
 		$('body,html').animate({scrollTop: top}, 800);
 
+	});
+
+	let API_URL = "https://erfg984pm0.execute-api.us-east-2.amazonaws.com/default/nums";
+
+	$("#a-block-5").on("click",function(){
+    $.ajax({
+        type: "POST",
+        url: API_URL,
+        data: JSON.stringify({
+            "id": id,
+            "time": time,
+            "place": place
+        }),
+        contentType: "application/json",
+        success: function(data){
+
+        }
+
+    });
+
+		let	top = $("#block-6").offset().top;
+		$('body,html').animate({scrollTop: top}, 800);
+    return false;
 	});
 });
 
